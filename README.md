@@ -33,7 +33,9 @@ How to Run Application:
 - Change current directory to AirSittingApplication. Command-->: cd AirSittingApplication
 - Run command: java -jar target/AirSittingApplication-1.0-SNAPSHOT-jar-with-dependencies.jar --file <file path containing passenger information>
 For example:
+```
 java -jar target/AirSittingApplication-1.0-SNAPSHOT-jar-with-dependencies.jar --file src/main/resources/input/file.txt
+```
 
 - There is step by step view of seat map whenever a px group is added into the seat map for better understanding.
 
