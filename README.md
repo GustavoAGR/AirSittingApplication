@@ -7,10 +7,12 @@ Java Version: 1.8.0_131
 Maven Version: 3.5.0
 
 Libraries: Will be downloaded automatically by Maven while running 'mvn clean install' on project
+```
 M2_REPO/junit/junit/4.12/junit-4.12.jar
 M2_REPO/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
 M2_REPO/args4j/args4j/2.0.10/args4j-2.0.10.jar
 M2_REPO/commons-io/commons-io/2.5/commons-io-2.5.jar
+```
 ----------------------------------------
 
 
@@ -72,46 +74,37 @@ Further Improvements
 
 Project Summary or details
 ----------------------------------------
-You run an Airline that has several planes that fly to different destinations around the world.
-You pride yourself on having a high customer satisfaction with those that fly with you. This
-you achieve by ensuring that:
-- Groups of travellers are seated together on the same row.
-- Providing travellers with a window seat if request.
+You run an Airline that has several planes that fly to different destinations around the world. You pride yourself on having a high customer satisfaction with those that fly with you. This you achieve by ensuring that:
+ * Groups of travellers are seated together on the same row.
+ * Providing travellers with a window seat if request.
 
-To determine the best sitting arrangements on the flight create a program that takes an input
-file as a command line argument and prints the results to standard out. An example input file
-is:
+To determine the best sitting arrangements on the flight create a program that takes an input file as a command line argument and prints the results to standard out. An example input file is:
 
-4 4\n
-1W 2 3\n
-4 5 6 7\n
-8\n
-9 10 11W\n
-12W\n
-13 14\n
-15 16\n
+```
+4 4
+1W 2 3 
+4 5 6 7
+8
+9 10 11W
+12W
+13 14
+15 16
+```
 
+The first line specifies the dimensions of the plane. The first digit is the number of seats in a row and the second digit is the number of rows on the plane.
 
-The first line specifies the dimensions of the plane. The first digit is the number of seats in a
-row and the second digit is the number of rows on the plane.
-
-Each subsequent line describes a group of travellers. For example, the first line of travelers
-describes a group of three where the first traveller has a preference for a window seat. Each
-number uniquely identifies the traveller on the flight.
-
+Each subsequent line describes a group of travellers. For example, the first line of travelers describes a group of three where the first traveller has a preference for a window seat. Each number uniquely identifies the traveller on the flight.
 The output for the above file should be:
-1 2 3 8\n
-4 5 6 7\n
-11 9 10 12\n
-13 14 15 16\n
+
+```
+1 2 3 8
+4 5 6 7
+11 9 10 12
+13 14 15 16
 100%
+```
 
-The program should aim to maximize customer satisfaction. The last line in the above output
-indicates the percentage of customers that have had their preferences satisfied. If the plane
-is over subscribed the program should aim to maximize customer satisfaction of those
-customers waiting for the flight.
+The program should aim to maximize customer satisfaction. The last line in the above output indicates the percentage of customers that have had their preferences satisfied. If the plane is over subscribed the program should aim to maximize customer satisfaction of those customers waiting for the flight.
+When you are submitting your program please provide a brief description of the approach in a README.txt file and zipped folder that includes a buildable project with the source code and appropriate tests.
 
-When you are submitting your program please provide a brief description of the approach in
-a README.txt file and zipped folder that includes a buildable project with the source code
-and appropriate tests.
 ----------------------------------------
