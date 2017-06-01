@@ -82,14 +82,14 @@ To determine the best sitting arrangements on the flight create a program that t
 file as a command line argument and prints the results to standard out. An example input file
 is:
 
-4 4
-1W 2 3
-4 5 6 7
-8
-9 10 11W
-12W
-13 14
-15 16
+4 4\n
+1W 2 3\n
+4 5 6 7\n
+8\n
+9 10 11W\n
+12W\n
+13 14\n
+15 16\n
 
 
 The first line specifies the dimensions of the plane. The first digit is the number of seats in a
@@ -100,10 +100,10 @@ describes a group of three where the first traveller has a preference for a wind
 number uniquely identifies the traveller on the flight.
 
 The output for the above file should be:
-1 2 3 8
-4 5 6 7
-11 9 10 12
-13 14 15 16
+1 2 3 8\n
+4 5 6 7\n
+11 9 10 12\n
+13 14 15 16\n
 100%
 
 The program should aim to maximize customer satisfaction. The last line in the above output
